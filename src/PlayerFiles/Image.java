@@ -3,18 +3,20 @@ package PlayerFiles;
 
 public class Image extends Doc implements Bright, Show{
     private int brightness = 2;
-
+//private String title="";
+    
+    
     public Image(String docTitle) {
         super();
-        System.out.println("img");
+        System.out.println("\n");
+        System.out.println("this is an img with :");
     }
     public Image(String docTitle, int preferredBrightness) {
-        this(docTitle);
+        title=docTitle;
         brightness = preferredBrightness;
     }
     @Override
     public void show() {
-        Doc.convert(title, brightness, "*");
         System.out.println("\n");
     }
     @Override

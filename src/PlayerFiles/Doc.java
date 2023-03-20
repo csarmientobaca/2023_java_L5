@@ -12,20 +12,6 @@ public class Doc {
         title = docTitle;
     }
 
-    public static String convert(int n, String y) {
-        String converted = "";
-        for (int i = 0; i < n; i++) {
-            converted += y;
-        }
-        return converted;
-    }
 
-    public static void convert(String title, int n, String y) {
-        String converted = "";
-        for (int i = 0; i < n; i++) {
-            converted += y;
-        }
-        System.out.println( title + " " + converted);
-    }
 
 }
